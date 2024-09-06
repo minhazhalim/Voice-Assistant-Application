@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     <title>Voice Assistant Application</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="icon" href="./iron-pic.png" type="image/x-icon">
+     <script src="script.js" defer></script>
+</head>
+<body>
+     <audio src="./Jarvis.mp3" id="j_intro"></audio>
+     <audio src="./power up.mp3" id="turn_on"></audio>
+     <div class="machine hide_on_small">
+          <div class="clock cont">
+               <img src="./clock1.png" alt="Clock Icon" class="icon">
+               <p id="time"></p>
+          </div>
+          <div class="internet cont">
+               <img src="./internet1.jpg" alt="Internet Icon" class="icon">
+               <p id="internet"></p>
+          </div>
+          <div class="battery cont">
+               <img src="./battery1.png" alt="Battery Icon" class="icon">
+               <p id="battery"></p>
+          </div>
+          <div class="temperature">
+               <p id="location"></p>
+               <p id="country"></p>
+               <p id="weatherT"></p>
+               <p id="weatherD"></p>
+               <img src="" alt="" id="weatherIcon">
+               <p id="oTemperature"></p>
+               <p id="fellLikeTemperature"></p>
+               <p id="minimumT"></p>
+               <p id="MaximumT"></p>
+          </div>
+          <img src="./heart.gif" alt="Heart Icon" id="heart">
+     </div>
+     <button class="hide_on_small" id="start_jarvis_button">
+          <img src="https://i.gifer.com/origin/43/434771e3bf841e79abb2d4da70d6b1e2.gif" alt="Start Jarvis Button">
+          <p>start recognition</p>
+     </button>
+     <button class="hide_on_small" id="stop_jarvis_button">
+          <img src="https://i.gifer.com/origin/43/434771e3bf841e79abb2d4da70d6b1e2.gif" alt="Stop Jarvis Button">
+          <p>stop recognition</p>
+     </button>
+     <div class="small_jarvis hide_on_small">
+          <button id="small_jarvis">
+               <img src="./iron_man.gif" alt="Iron Man Exo-Skeleton Armor" height="350"><p>make me small</p>
+          </button>
+     </div>
+     <div class="jarvis_setup in_middle hide_on_small">
+          <label for="">your name</label>
+          <input type="text">
+          <br>
+          <label for="">your bio</label>
+          <input type="text">
+          <br>
+          <label for="">your location</label>
+          <input type="text">
+          <br>
+          <label for="">instagram profile</label>
+          <input type="text">
+          <br>
+          <label for="">twitter profile</label>
+          <input type="text">
+          <br>
+          <label for="">github profile</label>
+          <input type="text">
+          <br>
+          <button id="submit_button">submit</button>
+     </div>
+     <div class="commands in_middle hide_on_small"></div>
+     <div class="new_jarvis_window"><img src="./heart.gif" alt="Heart Icon" id="jarvis_start" height="230"></div>
+</body>
+</html>
